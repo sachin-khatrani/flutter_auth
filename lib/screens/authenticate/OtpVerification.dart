@@ -167,6 +167,11 @@ class _OtpVerificationState extends State<OtpVerification> {
                                           builder: (context) => ProfileScreen(
                                                 data: userData,
                                               )));
+                                }else{
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => HomeScreen()));
                                 }
                               },
                               child: Container(
